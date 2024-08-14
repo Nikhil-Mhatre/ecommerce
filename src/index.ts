@@ -8,7 +8,7 @@ import isDbconnected from './db';
 const app = express();
 
 app.use(cors());
-const PORT = process.env.PORT || 9967;
+const PORT = process.env.PORT || 80;
 
 app.get('/health', (_, res) => {
   res.status(200).json({ message: 'Backend server is healthy' });
